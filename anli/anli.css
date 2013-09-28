@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+div{
+	margin:0;
+	padding:0;
+	}
+body{
+	background-color:#f8f8f8;
+	width:100%;
+	
+	}
+.content{
+	margin:auto;
+	padding:0;
+	width:927px;
+	}
+#content_list{
+	width:927px;
+	padding:0;
+	background-image:url(image/bg.jpg);
+	background-repeat:repeat-y;
+	margin-top:34px;
+	}
+.all_anli{
+	margin:73px 0 0 0;
+	}
+#content_list ul{
+	width:790px;
+	padding:26px 0 0 61px;
+	}
+#content_list li{
+	height:285px;
+	border-bottom:#d1d1d1 solid 1px;
+	width:790px;
+	margin-top:25px;
+	}

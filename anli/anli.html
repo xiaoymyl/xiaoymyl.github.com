@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>anlishouye</title>
+<link href="anli.css" rel="stylesheet" type="text/css" />
+<script src="jquery-1.10.2.min.js.js"></script>
+</head>
+<body>
+<div class="content">
+<img class="all_anli" src="image/all_anli.jpg" />
+<div id="content_list" data-id="3">
+  <ul>
+  </ul>
+</div>
+<script language="javascript">
+$(document).ready(function(){
+
+						   var addContent=function(f,t){
+							   var jsonUrl="anli.json";
+							   $.get(jsonUrl,function(json){
+													  if(!!json.rows){
+														  var Data=json.rows;
+														  for(i=f;i<t;i++)
+														  if(!Data[i]){
+															  break;
+															  }
+															  var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
+															  $("#content_list ul").append(ulContent);
+														  }
+												
+													 });
+						   }
+						   $(window).bind("scroll" ,function(){
+															
+															 if ($(document).scrollTop()+$(window).height()>$(document).height()-20){
+																var toId=parseInt($("#content_list").attr("data-id"));
+																addContent(toId,toId+3);
+																$("#content_list").attr("data-id",toId+3);
+																}
+															});
+						   addContent(0,3);
+						   });
+      </script>
+</body>
+</html>
