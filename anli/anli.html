@@ -21,14 +21,14 @@ $(document).ready(function(){
 							   $.get(jsonUrl,function(json){
 													  if(!!json.rows){
 														  var Data=json.rows;
-														  for(i=f;i<t;i++)
+														  for(i=f;i<t;i++)｛
 														  if(!Data[i]){
 															  break;
 															  }
 															  var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
 															  $("#content_list ul").append(ulContent);
 														  }
-												
+												                                   ｝
 													 });
 						   }
 						   $(window).bind("scroll" ,function(){
