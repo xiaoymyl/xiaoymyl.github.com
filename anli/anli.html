@@ -21,14 +21,22 @@ $(document).ready(function(){
 							   $.get(jsonUrl,function(json){
 													  if(!!json.rows){
 														  var Data=json.rows;
+<<<<<<< HEAD
 														  for(i=f;i<t;i++){
+=======
+														  for(i=f;i<t;i++)｛
+>>>>>>> 3e6371813055a4ab0432288b9ed0fc5724f6d8f5
 														  if(!Data[i]){
 															  break;
 															  }
 															  var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
 															  $("#content_list ul").append(ulContent);
 														  }
+<<<<<<< HEAD
 													  }
+=======
+												                                   ｝
+>>>>>>> 3e6371813055a4ab0432288b9ed0fc5724f6d8f5
 													 });
 						   }
 						   $(window).bind("scroll" ,function(){
