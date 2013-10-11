@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>anli</title>
+<title>anlishouye</title>
 <link href="anli.css" rel="stylesheet" type="text/css" />
 <script src="jquery-1.10.2.min.js.js"></script>
 </head>
@@ -14,14 +14,13 @@
   </ul>
 </div>
 <script language="javascript">
-$(document).ready(function(){
+$(document).ready(function(e){
 
 						   var addContent=function(f,t){
 							   var jsonUrl="anli.json";
 							   $.get(jsonUrl,function(json){
 													  if(!!json.rows){
 														  var Data=json.rows;
-
 														  for(i=f;i<t;i++){
 														  if(!Data[i]){
 															  break;
@@ -29,11 +28,7 @@ $(document).ready(function(){
 															  var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
 															  $("#content_list ul").append(ulContent);
 														  }
-
 													  }
-
-												                                  
-
 													 });
 						   }
 						   $(window).bind("scroll" ,function(){
@@ -47,5 +42,39 @@ $(document).ready(function(){
 						   addContent(0,3);
 						   });
       </script>
+</div>
+<div class="foot">
+<div class="content">
+<ul class="nav">
+<li><a href="#" target="_blank">腾讯智慧</a>|</li>
+<li><a href="#" target="_blank">关于腾讯</a>|</li>
+<li><a href="#" target="_blank">服务协议</a>|</li>
+<li><a href="#" target="_blank">隐私权保护</a>|</li>
+<li><a href="#" target="_blank">开放平台</a>|</li>
+<li><a href="#" target="_blank">网站导航</a>|</li>
+<li><a href="#" target="_blank">版权所有</a></li>
+<li class="li_long"><a href="#" target="_blank">京ICP备11010962号</a>|</li>
+<li class="li_long"><a href="#" target="_blank">京公网安备110105003042</a></li>
+</ul>
+<div class="foot_r">
+<div class="share">
+<span>分享到：</span>
+<a href="#" target="_blank"><img src="image/weibo.jpg" /></a>
+<a href="#" target="_blank"><img src="image/zone.jpg" /></a>
+<a href="#" target="_blank"><img src="image/QQ.jpg" /></a>
+<a href="#" target="_blank"><img src="image/sina.jpg" /></a>
+</div>
+<div class="erwei">
+<img src="image/erwei.jpg" />
+<p>扫描二维码 关注腾讯智慧</p>
+</div>
+</div>
+</div>
+</div>
+<div class="last">
+<div class="content">
+Copyright © 1998 - 2013 Tencent. All Rights Reserved
+</div>
+</div>
 </body>
 </html>
