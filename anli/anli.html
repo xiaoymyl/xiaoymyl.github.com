@@ -14,33 +14,38 @@
   </ul>
 </div>
 <script language="javascript">
-$(document).ready(function(e){
 
-						   var addContent=function(f,t){
-							   var jsonUrl="ul.json";
-							   $.get(jsonUrl,function(json){
-													  if(!!json.rows){
-														  var Data=json.rows;
-														  for(i=f;i<t;i++){
-														  if(!Data[i]){
-															  break;
-															  }
-															  var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
+$(document).ready(function(e) {
+	                            var addContent = function(f,t){
+		                         var jsonUrl = "ul.json"	
+		                          $.get(jsonUrl, function(json){		
+			                          if(!!json.rows){
+				                         var Data = json.rows;
+				                             for(i=f;i<t;i++){
+				                               if(!Data[i]){
+				                                  break;
+			                                               }
+														   var ulContent = '<li><img src="'+ Data[i].img+'"</li>';
 															  $("#content_list ul").append(ulContent);
 														  }
 													  }
 													 });
 						   }
-						   $(window).bind("scroll" ,function(){
-															
-															 if ($(document).scrollTop()+$(window).height()>$(document).height()-20){
-																var toId=parseInt($("#content_list").attr("data-id"));
-																addContent(toId,toId+3);
-																$("#content_list").attr("data-id",toId+3);
-																}
-															});
-						   addContent(0,3);
-						   });
+						   
+						   $(window).bind("scroll",function(){
+		                      if( $(document).scrollTop() + $(window).height() > $(document).height() - 20 ){			
+		                       var toId = parseInt($("#list").attr("data-id"));
+		                        addContent(toId,toId+3);
+		                        $("#list").attr("data-id",toId+3);
+		
+	                                                      	                                                 }
+	                                                       });
+	                                    addContent(0,3);		
+                             });
+						   
+						   
+						   
+				
       </script>
 </div>
 <div class="foot">
