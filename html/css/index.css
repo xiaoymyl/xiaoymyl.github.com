@@ -152,13 +152,16 @@ float:left;
 padding:2px; 
 position:relative;
 background-color:transparent;
-background-image:none;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop");}
+background-image:url(../images/point.png); 
+background-position:0 0 ;
+_background-image:none;
+_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop");}
 
 #top_pic .homepage_intro_player_control a.current{
 	background-color:transparent;
-	background-image:none;
-	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop"); 
+	background-image:url(../images/point.png); 
+	_background-image:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop"); 
 	background-position:20px 0;
 	position:relative; }
 
