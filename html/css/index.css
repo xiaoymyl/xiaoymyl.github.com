@@ -141,6 +141,8 @@ ul li{list-style:none;}
 	position: absolute;
 	left: 50%;
 	margin-left: -60px;
+	display:block;
+	position:relative;
 	/*margin-top: -50px;*/
 	top:92%;
 }
