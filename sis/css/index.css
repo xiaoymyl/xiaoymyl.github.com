@@ -144,9 +144,9 @@ ul li{list-style:none;}
 	/*margin-top: -50px;*/
 	top:92%;
 }
-#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png); background-position:0px 0px; float:left; padding:2px;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/point.png');}
+#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png); background-position:0px 0px; float:left; padding:2px;}
 
-#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png); background-position:20px 0px;}
+#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png); }
 
 #header_menu {
 	height: 50px;
