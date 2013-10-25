@@ -225,34 +225,42 @@ _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png
 #header_menu_box ul.header_menu_list li.menu_list_1 a {
 	background-position: 0px 0px;
 	width: 130px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_2 a {
 	background-position: -130px 0px;
 	width: 108px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_3 a {
 	background-position: -238px 0px;
 	width: 124px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_4 a {
 	background-position: -362px 0px;
 	width: 136px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_1 a:hover {
 	background-position: 0px 50px;
 	width: 130px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_2 a:hover {
 	background-position: -130px 50px;
 	width: 108px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_3 a:hover {
 	background-position: -238px 50px;
 	width: 124px;
+	position:relative;
 }
 #header_menu_box ul.header_menu_list li.menu_list_4 a:hover {
 	background-position: -362px 50px;
 	width: 136px;
+	position:relative;
 
 }
 /*foot开始*/
