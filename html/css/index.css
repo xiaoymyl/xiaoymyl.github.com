@@ -164,11 +164,13 @@ position:relative;
 background-color:transparent;
 background-image:url(../images/point.png); 
 background-position:0 0 ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png",sizingMethod=’scale’);
 _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop");}
 
 #top_pic .homepage_intro_player_control a.current{
 	background-color:transparent;
 	background-image:url(../images/point.png); 
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png",sizingMethod=’scale’);
 	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/point.png", sizingMethod="crop"); 
 	background-position:20px 0;
 	position:relative; }
