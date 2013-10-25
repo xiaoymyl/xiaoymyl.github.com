@@ -127,7 +127,7 @@ ul li{list-style:none;}
 	width: 138px;
 }
 #top_pic {
-	width:860px;
+	width:1400px;
 	height: 500px;
 	margin: 0px auto;
 	background-color: #ccc;
@@ -144,9 +144,9 @@ ul li{list-style:none;}
 	/*margin-top: -50px;*/
 	top:92%;
 }
-#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png); background-position:0px 0px; float:left; padding:2px;}
+#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png); background-position:0px 0px; float:left; padding:2px; position:relative;}
 
-#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png); background-position:20px 0; }
+#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png); background-position:20px 0; position:relative; }
 
 #header_menu {
 	height: 50px;
