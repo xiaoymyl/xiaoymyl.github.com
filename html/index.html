@@ -177,8 +177,14 @@ if ((version >= 5.5) && (version < 7) && (document.body.filters))
 
 window.onload=function(){
          document.getElementById("top").style.height=screen.height/5+"px";
-        
+    
+	$(document).ready(function() { 
+try { 
+  document.execCommand("BackgroundImageCache", false, true); 
+} catch(e) {} 
+});
 }
 </script>
+
 </body>
 </html>
