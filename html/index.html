@@ -174,18 +174,19 @@ if ((version >= 5.5) && (version < 7) && (document.body.filters))
    + "(src=\'" + myImage.src + "\', sizingMethod='scale');\"></span>";
      myImage.outerHTML = strNewHTML;
 } } 
-</script>
-<script type="text/javascript">
+
 window.onload=function(){
          document.getElementById("top").style.height=screen.height/5+"px";
     
-	$(document).ready(function() { 
-try { 
-  document.execCommand("BackgroundImageCache", false, true); 
-} catch(e) {} 
-});
+	
 }
 </script>
-
+<script type="text/javascript">
+$(document).ready(function() { 
+try { 
+  document.execCommand(‘BackgroundImageCache’, false, true); 
+} catch(e) {} 
+});
+</script>
 </body>
 </html>
