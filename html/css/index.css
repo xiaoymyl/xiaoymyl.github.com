@@ -12,6 +12,7 @@ ul li{list-style:none;}
 	margin: 0px auto;
 	background-image: url(../images/tab_bg.jpg);
 	background-repeat: repeat-x;
+	position:relative;
 }
 
 #menu_tab{
@@ -19,10 +20,12 @@ ul li{list-style:none;}
 	height:510px;
 	margin:0 auto;
 	padding:50px 0;
+	position:relative;
 	}
 #menu_tab ul li{
 	float:left;
 	margin:0 5px 0 0;
+	position:relative;
 	}
 #menu_tab ul li p{
 	width:60px;
@@ -57,6 +60,7 @@ ul li{list-style:none;}
 	background-image: url(../images/work_share_bg.jpg);
 	background-repeat: repeat-x;
 	background-position: 0px 0px;
+	position:relative;
 }
 #work_share_menu {
 	width: 878px;
@@ -74,6 +78,7 @@ ul li{list-style:none;}
 #work_share_menu #menu_title {
 	float: left;
 	width: 116px;
+	position:relative;
 }
 #work_share_menu #menu_title a {
 	background-image: url(../images/work_share_menu.jpg);
@@ -83,6 +88,7 @@ ul li{list-style:none;}
 #work_share_menu #menu_traffic {
 	float: right;
 	width: 138px;
+	position:relative;
 }
 #work_share_menu #menu_traffic a {
 	background-image: url(../images/work_share_menu.jpg);
@@ -92,6 +98,7 @@ ul li{list-style:none;}
 #work_share_menu #menu_daily {
 	float: right;
 	width: 138px;
+	position:relative;
 }
 #work_share_menu #menu_daily a {
 	background-image: url(../images/work_share_menu.jpg);
@@ -101,6 +108,7 @@ ul li{list-style:none;}
 #work_share_menu #menu_it {
 	float: right;
 	width: 138px;
+	position:relative;
 }
 #work_share_menu #menu_it a {
 	background-image: url(../images/work_share_menu.jpg);
@@ -110,6 +118,7 @@ ul li{list-style:none;}
 #work_share_menu #menu_medicine {
 	float: right;
 	width: 138px;
+	position:relative;
 }
 #work_share_menu #menu_medicine {
 	background-image: url(../images/work_share_menu.jpg);
@@ -120,6 +129,7 @@ ul li{list-style:none;}
 	float: right;
 	width: 138px;
 	margin-right: 10px;
+	position:relative;
 }
 #work_share_menu #menu_food a {
 	background-image: url(../images/work_share_menu.jpg);
