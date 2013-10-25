@@ -1,0 +1,87 @@
+html, body, ul, li, a ,p{
+	margin:0;
+	padding:0;
+}
+p {
+	font-size:12px;
+	color:#aaaaaa;
+	line-height: 33px;
+}
+img {
+	border:0;
+}
+ul, li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+.showbox{
+	width:100%;
+	background:#f8f8f8;
+	min-width:1001px;
+	_min-width:_min-width:experssion((document.documentByElement.clientWidth || document.body.clientWidth)>1002 ? "1001px" :"")
+	}
+.cooperation{
+	width:1001px;
+	margin:0 auto;
+	padding:50px;
+	}
+.coop_left{
+	float:left;
+	width:502px;
+	}
+.explanation{
+	margin:0 0 0 10px;
+	}
+.coop_img{
+	border:10px solid #fff;
+	margin:0 0 15px 0;
+	}
+#moreabout,#more{
+	border:1px solid #efefef;
+	display:inline-block;
+	height:22px;
+	width:50px;
+	color:#7b98d2;
+	font-size:10px;
+	line-height:22px;
+	text-align:center;
+	}
+#more{
+	margin:0 0 0 135px;
+	}
+#moreabout{
+	margin:0 0 0 54px;
+	margin:0 0 0 87px\0\9;
+	*margin:0 0 0 87px;
+	}
+.coop_right{
+	float:right;
+	}
+.world{
+	width:380px;
+	}
+.world img{
+	margin:20px 0 0;
+	}
+.address{
+	margin:49px 0 0;
+	margin:75px 0 0\0\9;
+	}
+.address .link{
+	color:#8f8f8f;
+	}
+.address .link:hover{
+	text-decoration:underline;
+	}
+.clearfix:after{
+	content:".";
+	height:0;
+	visibility:hidden;
+	display:block;
+	clear:both;
+	}
+.clearfix{
+	*zoom:1;
+	}	
