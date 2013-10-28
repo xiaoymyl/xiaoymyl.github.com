@@ -249,7 +249,6 @@ a {
 	background-image: url(../images/right_logo.jpg);
 	background-position: 80px 0px;
 }
-/*#header_menu_box ul.header_menu_list li a*/
 .menu_1,.menu_2,.menu_3,.menu_4 {
 	display: block;
 	background-image: url(../images/head_menu.jpg);
@@ -300,7 +299,7 @@ a {
 	position:absolute;
 	display:block;
 	top:50px;
-	left:-40px;
+	left:-30px;
 	width:170px;
 	background:url();
 	}
