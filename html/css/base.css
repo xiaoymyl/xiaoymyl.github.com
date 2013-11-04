@@ -1,8 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-html, body, ul, li, a ,p{
+html, body, ul, li, a, p {
 	margin:0;
 	padding:0;
+}
+body {
+	behavior:url("csshover.htc");
 }
 p {
 	font-size:12px;
@@ -19,198 +22,12 @@ a {
 	text-decoration:none;
 }
 /*head开始*/
-/*.bar {
-	width:100%;
-	height:50px;
-	background-color:#333333;
-}
-.home_icon {
-	float:left;
-	margin:0 0 0 50px;
-}
-.home_icon li{
-	display:block;
-}
-.homea {
-	width:93px;
-	height:50px;
-	display:block;
-	text-align:center;
-	background:url(../images/home_icon.jpg) no-repeat;
-}
-#nav {
-	width:558px;
-	height:50px;
-	float:right;
-	margin-right:18px;
-}
-.bar li {
-	float:left;
-	width:93px;
-	height:50px;
-	position:relative;
-}
-.bar li:hover {
-	cursor:pointer;
-}
-.content_bar {
-	width:1000px;
-	margin:0 auto;
-}
-#home, #home li{
-	position:relative;
-}
-#home li ul, #nav li ul {
-	display:none;
-}
-#home li:hover ul, #nav li:hover ul {
-	display:block;
-	position:absolute;
-	top:50px;
-	left:-40px;
-	width:170px;
-	background:url(../images/menu.png);
-}
-#home li:hover ul li, #nav li:hover ul li {
-	width:170px;
-	height:45px;
-}
-#home li:hover ul li a, #nav li:hover ul li a {
-	font-size:14px;
-	text-align:center;
-	line-height:65px;
-	color:#737373;
-	display:block;
-	margin:0 auto;
-}
-.navfirst {
-	padding:8px 0 0;
-}
-#home li:hover ul li a:hover, #nav li:hover ul li a:hover {
-	color:#fff;
-}
-.all, .trans, .daily, .IT, .medicine, .food {
-	background:url(../images/left_menu.jpg);
-}
-.all {
-	background-position: -6px 60px;
-}
-.trans {
-	background-position:-108px 60px;
-}
-.daily {
-	background-position:-204px 60px;
-}
-.IT {
-	background-position:-329px 60px;
-}
-.medicine {
-	background-position:-442px 60px;
-}
-.food {
-	background-position:-562px 60px
-}
-.all:hover {
-	background-position:-6px -8px;
-}
-.trans:hover {
-	background-position:-108px -8px;
-}
-.daily:hover {
-	background-position:-204px -8px;
-}
-.IT:hover {
-	background-position:-329px -8px;
-}
-.medicine:hover {
-	background-position:-442px -8px;
-}
-.food:hover {
-	background-position:-562px -8px;
-}
-.nav_1, .nav_2, .nav_3, .nav_4, .nav_5 {
-	display:block;
-	background:url(../images/sis.jpg);
-	height:49px;
-}
-.nav_1 {
-	background-position:0 0;
-}
-.nav_2 {
-	background-position:-127px 0;
-}
-.nav_3 {
-	background-position:-244px 0;
-}
-.nav_4 {
-	background-position:-357px 0;
-}
-.nav_5 {
-	background-position:-476px 0;
-}
-.nav_1:hover {
-	background-position:0 -48px;
-}
-.nav_2:hover {
-	background-position:-127px -48px;
-}
-.nav_3:hover {
-	background-position:-244px -48px;
-}
-.nav_4:hover {
-	background-position:-357px -48px;
-}
-.nav_5:hover {
-	background-position:-472px -50px;
-}
-.nav{
-	background:#333;
-	width:100%;
-	height:50px;
-	min-width:1002px;
-	_min-width:experssion((document.documentByElement.clientWidth || document.body.clientWidth)>1002 ? "1002px" :"")
-}
-.nav ul{
-	width:1002px;
-	margin:0 auto;
-}
-.nav ul li{
-	float:left;
-	}
-.nav ul li a{
-	background:url(../images/head_menu.jpg);
-	display:block;
-	width:120px;
-	height:50px;
-	}
-#menu_1{
-	background-position:0 0;
-	}
-#menu_2{
-	background-position:-122px 0;
-	}
-#menu_3{
-	background-position:-240px 0;
-	}
-#menu_4{
-	background-position:-370px 0;
-	}
-#menu_1:hover{
-	background-position:0 50px;
-	}
-#menu_2:hover{
-	background-position:-122px 50px;
-	}
-#menu_3:hover{
-	background-position:-240px 50px;
-	}
-#menu_4:hover{
-	background-position:-370px 50px;
-	}*/
 #header_menu {
 	height: 50px;
 	background-color: #333;
 	width: 100%;
+	position:relative;
+	z-index:9999;
 }
 #header_menu_box {
 	width: 980px;
@@ -249,7 +66,7 @@ a {
 	background-image: url(../images/right_logo.jpg);
 	background-position: 80px 0px;
 }
-.menu_1,.menu_2,.menu_3,.menu_4 {
+.menu_1, .menu_2, .menu_3, .menu_4 {
 	display: block;
 	background-image: url(../images/head_menu.jpg);
 	height: 50px;
@@ -286,38 +103,160 @@ a {
 #header_menu_box ul.header_menu_list li.menu_list_4 a:hover {
 	background-position: -362px 50px;
 	width: 136px;
-
 }
-
-.menu_list_2{
+#header_menu_box li {
 	position:relative;
-	}
-.menu_list_2 ul{
+}
+#header_menu_box li ul {
 	display:none;
-	}
-.menu_list_2:hover ul{
+}
+#header_menu_box li:hover ul {
 	position:absolute;
+	height:auto;
 	display:block;
 	top:50px;
 	left:-30px;
 	width:170px;
-	background:url();
-	}
-.menu_list_2:hover ul li{
+	background:#ccc;
+}
+#header_menu_box li:hover ul li {
 	width:170px;
 	height:45px;
-	}
-.menu_list_2:hover ul li a{
+}
+#header_menu_box li:hover ul li a {
 	display:block;
-	line-height:65px;
+	line-height:55px;
+	padding:5px 0 0 0;
 	font-size:14px;
 	text-align:center;
 	color:#737373;
 	margin:0 auto;
-	}
-.menu_list_2:hover ul li a:hover{
+}
+#header_menu_box li:hover ul li a:hover {
 	color:#fff;
-	}	
+}
+#son_menu li a:hover{color:#fff;}
+.nav {
+	background:#333;
+	width:100%;
+	height:50px;
+}
+.nav_list {
+	width:1002px;
+	margin:0 auto;
+	height:50px;
+}
+.homebtn {
+	width:102px;
+	float:left;
+	margin:0;
+}
+.homebtn li {
+	width:102px;
+	height:50px;
+}
+#indexbtn {
+	background:url(../images/home_icon.jpg);
+	display:block;
+	width:102px;
+	height:50px;
+}
+.menu_list {
+	float:right;
+	margin:0;
+}
+.menu_list_li {
+	float:left;
+	width:102px;
+	height:50px;
+}
+.menu_list li ul li {
+	float:none;
+}
+#allbtn, #trans, #daily, #IT, #medicine, #food {
+	background:url(../images/left_menu.jpg);
+	width:102px;
+	height:50px;
+	display:block;
+}
+#allbtn {
+	background-position:-6px 60px;
+}
+#trans {
+	background-position:-108px 60px;
+}
+#daily {
+	background-position:-204px 60px;
+}
+#IT {
+	background-position:-329px 60px;
+}
+#medicine {
+	background-position:-442px 60px;
+}
+#food {
+	background-position:-562px 60px;
+}
+#allbtn:hover {
+	background-position:-6px -8px;
+}
+#trans:hover {
+	background-position:-108px -8px;
+}
+#daily:hover {
+	background-position:-204px -8px;
+}
+#IT:hover {
+	background-position:-329px -8px;
+}
+#medicine:hover {
+	background-position:-442px -8px;
+}
+#food:hover {
+	background-position:-562px -8px;
+}
+.homebtn li, .menu_list li {
+	position:relative;
+}
+.homebtn li ul, .menu_list li ul {
+	display:none;
+}
+.homebtn li:hover ul, .menu_list li:hover ul {
+	position:absolute;
+	top:50px;
+	left:-10px;
+	display:block;
+	width:120px;
+	background:#ccc;
+	padding:0;
+}
+.homebtn li:hover .bgcolor_t, .menu_list li:hover .bgcolor_t {
+	background:url();
+}
+.menu_list li:hover .bgcolor_tw {
+	background:url();
+}
+.menu_list li:hover .bgcolor_f {
+	background:url();
+}
+.homebtn li:hover ul li, .menu_list li:hover ul li {
+	width:120px;
+	height:50px;
+}
+.homebtn li:hover ul li a, .menu_list li:hover ul li a {
+	font-size:14px;
+	line-height:50px;
+	color:#737373;
+	text-align:center;
+	display:block;
+	width:120px;
+	margin:0 auto;
+	padding:0;
+}
+.homebtn li:hover ul li a:hover,.menu_list li:hover ul li a:hover {
+	color:#fff;
+}
+#menu_trans li a:hover,#menu_home li a:hover{color:#fff;}
 /*head结束*/
 /*foot开始*/
 .footer {
@@ -328,7 +267,6 @@ a {
 	height: 200px;
 	background-color: #333;
 	min-width:980px;
-	_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>980?"980px":"");
 }
 .footer .footer_up #foot_menu {
 	width: 980px;

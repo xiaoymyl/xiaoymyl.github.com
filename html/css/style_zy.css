@@ -20,7 +20,6 @@ a {
 	width:100%;
 	background:#f8f8f8;
 	min-width:1001px;
-	_min-width:_min-width:experssion((document.documentByElement.clientWidth || document.body.clientWidth)>1002 ? "1001px" :"")
 	}
 .cooperation{
 	width:1001px;
@@ -66,8 +65,8 @@ a {
 	margin:20px 0 0;
 	}
 .address{
-	margin:49px 0 0;
-	margin:75px 0 0\0\9;
+	margin:37px 0 0;
+	margin:70px 0 0\0\9;
 	}
 .address .link{
 	color:#8f8f8f;

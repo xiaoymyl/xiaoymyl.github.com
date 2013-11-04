@@ -3,19 +3,29 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>首页</title>
-<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
 <script language="javascript" src="http://f2e.it/jq.js"></script>
-<script language="javascript" src="js/public.js"></script>
+<script language="javascript" src="js/index.js"></script>
 </head>
 
 <body>
 <div id="header_menu">
   <div id="header_menu_box">
     <ul class="header_menu_list">
-      <li class="menu_list_1"><a href="#"></a></li>
-      <li class="menu_list_2"><a href="#"></a></li>
-      <li class="menu_list_3"><a href="anli.html"></a></li>
-      <li class="menu_list_4"><a href="#"></a></li>
+      <li class="menu_list_1"><a class="menu_1" href="#"></a></li>
+      <li class="menu_list_2 hover">
+      	<a class="menu_2" href="#"></a>
+      	<ul class="menu_son">
+        	<li><a href="#">金冠食品</a></li>
+            <li><a href="#">闽中真田</a></li>
+            <li><a href="#">上海大众</a></li>
+            <li><a href="#">千金药业</a></li>
+            <li><a href="#">银鹭食品</a></li>
+        </ul>
+      </li>
+      <li  class="menu_list_3"><a class="menu_3" href="#"></a></li>
+      <li class="menu_list_4"><a class="menu_4" href="#"></a></li>
     </ul>
     <ul class="header_menu_logo">
       <li class="qq_mind"><a href="#"></a></li>
@@ -42,19 +52,18 @@
       </ul>
     </div>
   </div>
-  <!--<div style="height:100px;width:100%"></div>-->
     <div  id="menu_tab">
         <ul>
             <li>
-                <p id="pt"><a><i>大平台</i></a></p>
+                <p class="pt"><a><i>大平台</i></a></p>
                 <img class="iteam" src="images/big.png" width="865" height="510"/>
             </li>
             <li>
-                <p id="data"><a><i>大数据</i></a></p>
+                <p class="data"><a><i>大数据</i></a></p>
                 <img class="iteam" src="images/data.png" width="865" height="510" />
             </li>
             <li>
-                <p id="zy"><a><i>大资源</i></a></p>
+            	<p class="zy"><a><i>大资源</i></a></p>
                 <img class="iteam" src="images/zy.png" width="865" height="510" />
             </li>
         </ul>
@@ -78,78 +87,5 @@
     <div id="copyright">Copyright © 1998 - 2013 Tencent. All Rights Reserved</div>
   </div>
 </div>
-<script language="javascript">
-$(document).ready(function(e) {
-	
-	$("#menu_tab li").mouseover(function(){
-		$("#menu_tab li").removeClass("hover");
-		$("#tab_img img").hide();
-		$("#tab_img img").eq($(this).index()).show();
-		$(this).addClass("hover");
-		});
-	$("#menu_tab li").eq(0).mouseover();	    
-});
-</script> 
-<script language="javascript">
-$(document).ready(function(e) {
-    		$('.homepage_intro_player_control a').bind('click',function(){
-			if(!$(this).hasClass('current')){
-				var $a = $('.homepage_intro_player_control a');
-				var f = $a.index($a.filter('.current'));
-				var t = $a.index(this);
-				$a.removeClass('current');
-				$(this).addClass('current');
-				$('img',$a).attr("src","img/arrow_gray.jpg") ; 
-				$(this).children("img").attr("src","img/arrow_black.jpg");
-				var $text = $('.homepage_intro_title');
-				var $img = $(".homepage_intro_player a");
-				var $info = $(".homepage_intro_player .pic_info");
-				$text.hide();
-				$text.eq(t).show();
-				$img.eq(f).stop(true,true).fadeOut(500);
-				
-				$img.eq(t).stop(true,true).fadeIn(500);
-				
-				
-				if(!!_h_timer)clearTimeout(_h_timer);
-				_h_timer = setTimeout(function(){_h_timerfunc();},5000);
-			}
-		}).eq(0).addClass('current');
-		$(".homepage_intro_player").bind('mouseenter',function(){
-			if(!!_h_timer)clearTimeout(_h_timer);
-		}).bind('mouseleave',function(){
-			if(!!_h_timer)clearTimeout(_h_timer);
-			_h_timer = setTimeout(function(){_h_timerfunc();},5000);
-		});
-		var _h_timer = null,_h_timerfunc = function(){
-			var $a = $('.homepage_intro_player_control a');
-			var f = $a.index($a.filter('.current'));
-			var t = f+1>=$a.size()?0:f+1;
-			$a.eq(t).trigger('click');
-		}
-		_h_timer = setTimeout(function(){_h_timerfunc();},8000);
-		$(".iteam").hide();
-		$(".iteam:first").show();
-		$("#menu_tab p").click(function () {
-			if ($(this).next().is(":hidden")) {
-				$(".iteam").animate({width:"hide"},100);
-				$(this).next().animate({width:"show"},100);                  
-			}
-		});
-		$("#pt").click(function(){
-			setCol(this,"#2571ab");
-			})
-		$("#data").click(function(){
-			setCol(this,"#588d33");
-			})
-		$("#zy").click(function(){
-			setCol(this,"#d77a13");
-			})
-});
-function setCol(id,col){
-	$(id).css("background-color",col);
-	$(id).parent().siblings().children("p").css("background","#b4b4b4");
-	}
-</script>
 </body>
 </html>

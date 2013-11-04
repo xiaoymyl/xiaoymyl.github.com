@@ -1,5 +1,4 @@
 
-/**/
 html, body, ul, li, a ,p{
 	margin:0;
 	padding:0;
@@ -20,7 +19,6 @@ a {
 }
 .content_tab {
 	/*width: 1360px;*/
-	width: 100%;
 	/*height: 296px;*/
 	margin: 0px auto;
 	background-image: url(../images/tab_bg.jpg);
@@ -51,21 +49,20 @@ a {
 	font-size:18px;
 	font-weight:bold;
 	position:absolute;
-	top:45%;
+	top:40%;
 	left:30%;
 	}
-#data,#zy{
+.pt,.data,.zy{
 	background:#b4b4b4;}
-#pt,#pt:hover{
+.pt{
 	background:#2571ab;
 	}
-#data:hover{
+/*.data:hover{
 	background:#588d33;
 	}
-#zy:hover{
+.zy:hover{
 	background:#d77a13;
-	}
-
+	}*/
 #work_share {
 	/*width: 1360px;*/
 	width: 100%;
@@ -143,7 +140,7 @@ a {
 	width: 138px;
 }
 #top_pic {
-	width: 100%;
+	width: 1000px;
 	height: 500px;
 	margin: 0px auto;
 	background-color: #ccc;
@@ -160,7 +157,5 @@ a {
 	/*margin-top: -50px;*/
 	top:92%;
 }
-#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png); background-position:0px 0px; float:left; padding:2px;}
-
-
-#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png); background-position:20px 0px;}
+#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png);_background-image:url(../images/point.gif); background-position:0px 0px; float:left; padding:1px;}
+#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png);_background-image:url(../images/point.gif); background-position:20px 0px;}

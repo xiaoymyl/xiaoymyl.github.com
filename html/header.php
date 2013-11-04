@@ -4,7 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>首页</title>
 <link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/home.css" rel="stylesheet" type="text/css" />
+<link href="css/style_zy.css" rel="stylesheet" type="text/css" />
 <script language="javascript" src="http://f2e.it/jq.js"></script>
+<script language="javascript" src="js/index.js"></script>
+
 </head>
 
 <body>
