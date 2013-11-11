@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<style type="text/css">
+.father{
+	width:466px;
+	height:244px;
+	overflow:hidden;
+	float:left;
+	position:absolute;
+	left:466px;
+	}
+.father a{ 
+    display:block;
+    width:48px;
+	height:23px;
+	cursor:pointer;}
+.one{
+	position:absolute;
+	background-color:#999;
+	left:-466px;
+	background-image:url(1.jpg);
+	width:466px;
+	height:244px;
+	}
+#one_a{
+	left:-366px;
+	top:30px;
+	position:absolute;
+	}
+.two{
+	position:absolute;
+	background-color:#06F;
+	left:0px;
+	background-image:url(2.jpg);
+	width:466px;
+	height:244px;
+	}
+#two_a{
+	left:200px;
+	top:60px;
+	position:absolute;
+	}
+.three{
+	position:absolute;
+	background-color:#390;
+	left:466px;
+	background-image:url(3.jpg);
+	width:466px;
+	height:244px;
+	}
+#three_a{
+	left:766px;
+	top:90px;
+	position:absolute;
+	}
+.points{
+	position:absolute;
+	left:50%;
+	top:220px;
+	}
+.points a{
+	width:20px;
+	height:24px;
+	display:block;
+	float:left;
+	background-image:url(points.png);
+	background-position:0 0;
+	
+	}
+.points a.current{
+	width:20px;
+	height:24px;
+	display:block;
+	float:left;
+	background-image:url(points.png);
+	background-position:20px 0;
+	}
+</style>
+</head>
+
+<body>
+<div class="father">
+<div  class="son one"><a href="#" id="one_a"><img src="more.png" width="48" height="23" /></a></div>
+<div  class="son two"><a href="#" id="two_a"><img src="more.png" width="48" height="23" /></a></div>
+<div  class="son three"><a href="#" id="three_a"><img src="more.png" width="48" height="23" /></a></div>
+</div>
+<div class="points">
+<a href="javascrit:;" id="points_1" class=""></a>
+<a href="javascrit:;" id="points_2" class="current"></a>
+<a href="javascrit:;" id="points_3" class=""></a>
+</div>
+
+<script language="javascript" src="jquery-1.7.1.min.js"></script>
+<script language="javascript">
+
+$(document).ready(function(e){
+setInterval(					  
+	function donghua(){	
+	
+
+    
+  if($(".one").css('left') == '466px'){
+	      $(".one").animate({ left: "-=466" }, 500);
+		  $(".two").animate({ left: "+=932" }, 10);
+		  $(".three").animate({ left: "-=466" },500);
+		  $("#one_a").animate({left:"-=466"},500);
+		  $("#two_a").animate({left:"+=932"},10);
+		  $("#three_a").animate({left:"-=466"},500);
+		  $(".points a").removeClass('current');
+		  $("#points_1").addClass('current');
+	}
+	else  if($(".one").css('left') == '0px'){
+		  $(".one").animate({ left: "-=466" }, 500);
+		  $(".two").animate({ left: "-=466" }, 500);
+		  $(".three").animate({ left: "+=932" }, 10);
+		  $("#one_a").animate({left:"-=466"},500)
+		  $("#two_a").animate({left:"-=466"},500)
+		  $("#three_a").animate({left:"+=932"},10)
+		  $(".points a").removeClass('current');
+		  $("#points_2").addClass('current');
+	}
+	else  if($(".one").css('left') == '-466px'){
+		  $(".one").animate({ left: "+=932" }, 10);
+		  $(".two").animate({ left: "-=466" }, 500);
+		  $(".three").animate({ left: "-=466" }, 500);
+		  $("#one_a").animate({left:"+=932"},10)
+		  $("#two_a").animate({left:"-=466"},500)
+		  $("#three_a").animate({left:"-=466"},500)
+		  $(".points a").removeClass('current');
+		  $("#points_3").addClass('current');
+	}
+
+	}
+	,5000);
+	$("#points_1").bind('click',function(){
+										 if(!$(this).hasClass('current')){
+										    $(".points a").removeClass('current');
+				                            $(this).addClass('current');
+											
+										 
+										 }
+										 if($(".two").css('left')=='0px'){
+											 $(".one").animate({ left: "+=466" }, 500);
+		                                     $(".two").animate({ left: "+=466" }, 500);
+		                                     $(".three").animate({ left: "-=932" },10);
+		                                     $("#one_a").animate({left:"+=466"},500)
+		                                     $("#two_a").animate({left:"+=466"},500)
+		                                     $("#three_a").animate({left:"-=932"},10)
+											 };
+									   if($(".three").css('left')=='0px'){
+											 $(".one").animate({ left: "-=466" }, 500);
+		                                     $(".two").animate({ left: "+=932" }, 10);
+		                                     $(".three").animate({ left: "-=466" }, 500);
+		                                     $("#one_a").animate({left:"-=466"},500)
+		                                     $("#two_a").animate({left:"+=932"},10)
+		                                     $("#three_a").animate({left:"-=466"},500)
+											 };
+										 
+										
+																});
+	$("#points_2").bind('click',function(){
+										 if(!$(this).hasClass('current')){
+										    $(".points a").removeClass('current');
+				                            $(this).addClass('current');
+										 
+										 }
+										 if($(".one").css('left')=='0px'){
+											 $(".one").animate({ left: "-=466" }, 500);
+		                                     $(".two").animate({ left: "-=466" }, 500);
+		                                     $(".three").animate({ left: "+=932" },10);
+		                                     $("#one_a").animate({left:"-=466"},500)
+		                                     $("#two_a").animate({left:"-=466"},500)
+		                                     $("#three_a").animate({left:"+=932"},10)
+											 };
+									   if($(".three").css('left')=='0px'){
+											 $(".one").animate({ left: "-=932" }, 10);
+		                                     $(".two").animate({ left: "+=466" }, 500);
+		                                     $(".three").animate({ left: "+=466" },500);
+		                                     $("#one_a").animate({left:"-=932"},10)
+		                                     $("#two_a").animate({left:"+=466"},500)
+		                                     $("#three_a").animate({left:"+=466"},500)
+											 };
+										 
+										
+																});
+	$("#points_3").bind('click',function(){
+										 if(!$(this).hasClass('current')){
+										    $(".points a").removeClass('current');
+				                            $(this).addClass('current');
+										 
+										 }
+										 if($(".one").css('left')=='0px'){
+											 $(".one").animate({ left: "+=466" }, 500);
+		                                     $(".two").animate({ left: "-=932" }, 10);
+		                                     $(".three").animate({ left: "+=466" }, 500);
+		                                     $("#one_a").animate({left:"+=466"},500)
+		                                     $("#two_a").animate({left:"-=932"},10)
+		                                     $("#three_a").animate({left:"+=466"},500)
+											 };
+									   if($(".two").css('left')=='0px'){
+											 $(".one").animate({ left: "+=932" }, 10);
+		                                     $(".two").animate({ left: "-=466" }, 500);
+		                                     $(".three").animate({ left: "-=466" },500);
+		                                     $("#one_a").animate({left:"+=932"},10)
+		                                     $("#two_a").animate({left:"-=466"},500)
+		                                     $("#three_a").animate({left:"-=466"},500)
+											 };
+										 
+										
+																});
+	});
+</script>
+
+</body>
+</html>

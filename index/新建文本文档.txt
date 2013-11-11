@@ -1,0 +1,75 @@
+点-1：display: block; left: 0%; z-index: 1;
+背景style没变化
+字体-1：position: absolute; left: 295px; top: 76px; display: block;
+
+
+
+
+
+
+点：display: none; left: 100%; z-index: 0;
+字体：position: absolute; left: -205px; top: 76px; display: block;
+
+
+
+
+
+one -100px two 0px    three  100px one_a -366px two_a 200px  three_a 766px
+one 100px  two -100px three 0px    one_a  566px two_a -266px three_a 300px
+one 0px    two 100px  three -100px one_a  100px two_a 666px  three_a -166px
+
+if(one=100px){two three+=100px}
+if(one=0){two-=200 three+=100}
+if(one=-100){two+=100 three-=200}
+
+
+231
+312
+
+312
+123
+
+
+
+if (click("$(.points a eq(t))"))
+stop().$(.father div eq(t)).css(left=0)
+
+
+
+
+
+
+
+
+
+
+div
+when div left 0px
+this left +=466px
+this next left -=932
+this last left +=466
+
+div a
+this a left +=466px
+this a next left -=932
+this a last left +=466
+
+
+points a
+this a current
+
+
+
+click points a
+
+this .eq().left=0px
+
+
+
+
+
+
+
+
+
+ 
