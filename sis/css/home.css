@@ -210,143 +210,7 @@ a {
 	overflow:hidden;
 	margin:0 auto;
 }
-/*.banner_box{
-	float:left;
-	width:1000px;
-	position:relative;
-	height:367px;
-	}
-#banner_01{
-	background:url(../images/top_01.jpg);
-	}
-#banner_02{
-	background:url(../images/top_02.jpg);
-	}
-#banner_03{
-	background:url(../images/top_03.jpg);
-	}
-#banner_04{
-	background:url(../images/top_04.jpg);
-	}
-#banner_05{
-	background:url(../images/top_05.jpg);
-	}
-#banner_world_one{
-	position:absolute;
-	top:160px;
-	left:210px;
-	}
-	
-#jg_one{
-	position:absolute;
-	top:269px;
-	left:797px;
-	}	
-#jg_two{
-	position:absolute;
-	top:240px;
-	left:730px;
-	}
-#jg_three{
-	position:absolute;
-	top:175px;
-	left:548px;
-	}
-#mz_one{
-	position:absolute;
-	top:204px;
-	right:527px;
-	}	
-#mz_two{
-	position:absolute;
-	top:172px;
-	right:527px;
-	}
-#mz_three{
-	position:absolute;
-	top:128px;
-	right:527px;
-	}
-#dz_one{
-	position:absolute;
-	top:258px;
-	left:608px;
-	}	
-#dz_two{
-	position:absolute;
-	top:220px;
-	left:542px;
-	}
-#dz_three{
-	position:absolute;
-	top:150px;
-	left:538px;
-	}
-#qj_one{
-	position:absolute;
-	top:266px;
-	right:548px;
-	}	
-#qj_two{
-	position:absolute;
-	top:235px;
-	right:550px;
-	}
-#qj_three{
-	position:absolute;
-	top:150px;
-	right:538px;
-	}	
-#yl_one{
-	position:absolute;
-	top:196px;
-	right:539px;
-	}	
-#yl_two{
-	position:absolute;
-	top:157px;
-	right:539px;
-	}
-#yl_three{
-	position:absolute;
-	top:98px;
-	right:539px;
-	}*/			
-/*#banner_world_two{
-	position:absolute;
-	top:110px;
-	right:250px;
-	}
-#banner_world_three{
-	position:absolute;
-	top:110px;
-	left:250px;
-	}
-#banner_world_four{
-	position:absolute;
-	top:110px;
-	right:270px;
-	}
-#banner_world_five{
-	position:absolute;
-	top:110px;
-	right:245px;
-	}	
-#top_pic .homepage_intro_player_control {
-	width: 120px;
-	height: 30px;
-	position: absolute;
-	left: 50%;
-	margin-left: -60px;
-	/*margin-top: -50px;
-	top:90%;
-}
-homepage_intro_player a {
-	display:block;
-	float:left;
-	}
-#top_pic .homepage_intro_player_control a{ width:20px; height:20px; display:block; background-image:url(../images/point.png);_background-image:url(../images/point.gif); background-position:0px 0px; float:left; padding:1px;}
-#top_pic .homepage_intro_player_control a.current{background-image:url(../images/point.png);_background-image:url(../images/point.gif); background-position:20px 0px;}*/
+
 #tab_bg{position:absolute;left:40px;top:490px;overflow:hidden;}
 .banner {
 	width: 100%;
@@ -374,6 +238,7 @@ _width:expression((document.documentElement.clientWidth||document.body.clientWid
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	margin:0 auto;
 	z-index: 996
 }
 .banner_container .banner_content img {/*position:absolute;left:50%;margin-left:-680px;top:0px;*/

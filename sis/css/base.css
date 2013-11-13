@@ -253,7 +253,7 @@ a {
 	width: 500px;
 	padding: 4px 0px 4px 0px;
 }
-.footer .footer_up #foot_menu p.left a:hover{
+.footer .footer_up #foot_menu p.p_link a:hover{
 	text-decoration:underline;
 	}
 .footer .footer_up #foot_menu p.right {
