@@ -1,6 +1,8 @@
+@charset "utf-8";
 html, body, ul, li, a ,p{
 	margin:0;
 	padding:0;
+	font-family:"微软雅黑","黑体", "Arial Unicode MS", Tahoma;
 }
 p {
 	font-size:12px;
@@ -20,44 +22,64 @@ a {
 	width:100%;
 	background:#f8f8f8;
 	min-width:1001px;
-	_min-width:_min-width:experssion((document.documentByElement.clientWidth || document.body.clientWidth)>1002 ? "1001px" :"")
 	}
 .cooperation{
-	width:1001px;
+	width:1000px;
 	margin:0 auto;
-	padding:50px;
+	padding:50px 0;
 	}
 .coop_left{
 	float:left;
 	width:502px;
 	}
-.explanation{
+.coop_title{
+	font-weight:bold;
+	font-size:18px;
+	color:#6b6b6b;
 	margin:0 0 0 10px;
 	}
+.coop_right_title{font-size:18px;color:#6b6b6b;}
+.explanation{margin:0 0 0 10px;width:462px;position:relative;}
 .coop_img{
 	border:10px solid #fff;
 	margin:0 0 15px 0;
 	}
 #moreabout,#more{
-	border:1px solid #efefef;
-	display:inline-block;
-	height:22px;
+	/*border:1px solid #efefef;
 	width:50px;
 	color:#7b98d2;
 	font-size:10px;
 	line-height:22px;
-	text-align:center;
+	text-align:center;*/
+	background:url(../images/btn_more.png);
+	background-position:0 23px;
+	display:inline-block;
+	height:22px;
+	width:48px;
+	position:absolute;
+	
 	}
+#moreabout:hover,#more:hover{
+	background-position:0 -1px;
+}
 #more{
-	margin:0 0 0 135px;
+	/*margin:0 0 0 134px;*/
+	top:4px;
+	right:0;
 	}
 #moreabout{
-	margin:0 0 0 54px;
-	margin:0 0 0 87px\0\9;
-	*margin:0 0 0 87px;
+	top:70px;
+	_top:62px;
+	right:0;
+	/*margin:0 0 0 54px;
+	margin:0 0 0 60px\0\9;
+	*margin:0 0 0 60px;*/
 	}
 .coop_right{
 	float:right;
+	}
+.coop_right_p{
+	line-height:20px\0\9;
 	}
 .world{
 	width:380px;
@@ -66,22 +88,15 @@ a {
 	margin:20px 0 0;
 	}
 .address{
-	margin:49px 0 0;
-	margin:75px 0 0\0\9;
+	margin:37px 0 0;
+	margin:70px 0 0\0\9;
+	position:relative;
 	}
 .address .link{
 	color:#8f8f8f;
 	}
 .address .link:hover{
-	text-decoration:underline;
+	color:#444;
 	}
-.clearfix:after{
-	content:".";
-	height:0;
-	visibility:hidden;
-	display:block;
-	clear:both;
-	}
-.clearfix{
-	*zoom:1;
-	}	
+.top_img{width:1000px;margin:0 auto;}
+.div_border{border:1px solid #f1f1f1}

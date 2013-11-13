@@ -1,0 +1,66 @@
+﻿{
+  "total" : 5,
+  "rows" : [ {
+    "id" : 1,
+    "title" : "达因药业<宝贝>大剧冠名合作",
+    "content" : "腾讯大剧《宝贝》营销，锁定精准受众人群深入沟通互动，有效提升品牌认知度以及美誉度。",
+    "img" : "images/1.jpg",
+	"txt" : "活动链接：",
+    "url" : "http://v.qq.com/topic/2013/baby.html",
+    "owner" : "广告主：达因药业",
+	"date":"",
+	"more":"images/more.png",
+	"more_a":"anli_dayin.php", 	
+    "tag" : "it"
+  }, {
+    "id" : 2,
+    "title" : "多芬《秀发微教室》",
+    "content" : "深度合作，定制3期“秀发微课堂”，帮助受众解决秀发困扰，告别蒲公英发质。 从明星，专家，达人，特邀体验者，不同人物不同角度出发，软性推介产品，覆盖不同人群。视频中给予产品特写，加深记忆度",
+    "img" : "images/2.jpg",
+	"txt" : "活动链接：",
+    "url" : "http://lenovo-z.qq.com/",
+    "owner" : "广告主：联合利华-Dove-hair",
+	"date":"营销活动周期： 2012.12.24-2013.2.5",
+	"more":"images/more.png", 
+	"more_a":"anli_duofen.php", 	
+    "tag" : "it"
+  },{
+    "id" : 3,
+    "title" : "新桑塔纳行动真力量",
+    "content" : "通过情感影响受众，以“真情”为主题，做为链接新桑塔纳和受众之间的纽带，并借助腾讯微博和腾讯视频，保障传播和情感体现，加强了活动的厚度和广度。",
+    "img" : "images/3.jpg",
+	"txt" : "活动链接：",
+    "url" : "http://newsantanatruth.qq.com",
+    "owner" : "广告主：上海大众",
+	"date":"营销活动周期:2013年1月4日-2013年2月1日",
+	"more":"images/more.png", 
+	"more_a":"anli_shdz.php", 
+    "tag" : "it"
+  },{
+    "id" : 4,
+    "title" : "“我的色彩我的电影梦”",
+    "content" : "一次多元化的跨界合作，联想、腾讯视频、川制作、九分钟电影组委会联合呈现，名导陆川鼎力支持，以联想七大色彩为主题，展开全民微电影制造大赛，帮助年轻人实现电影梦想，同时传递联想Z480色彩精神。",
+    "img" : "images/4.jpg",
+	"txt" : "活动链接：",
+    "url" : "http://lenovo-z.qq.com/",
+    "owner" : "广告主：联想",
+	"date":"营销活动周期： 2012.5-2012.12",
+	"more":"images/more.png", 
+	"more_a":"anli_lenovo.php", 
+    "tag" : "it"
+  },{
+    "id" : 5,
+    "title" : "金冠《笑傲江湖》大剧冠名",
+    "content" : "社会化大剧营销让金冠新TVC及新包装赚得最大化曝光",
+    "img" : "images/5.jpg",
+	"txt" : "活动链接：",
+    "url" : "http://e.t.qq.com/jinguanfood",
+    "owner" : "广告主：金冠食品",
+	"date":"营销活动周期：2013年2月4日-2013年3月15日",
+	"more":"images/more.png", 
+	"more_a":"anli_jinguan.php", 
+    "tag" : "it"
+  }
+
+ ]
+}
