@@ -5,27 +5,38 @@
 <title>首页</title>
 <link href="css/base.css" rel="stylesheet" type="text/css" />
 <link href="css/home.css" rel="stylesheet" type="text/css" />
-<script language="javascript" src="http://f2e.it/jq.js"></script>
+<link href="css/style_zy.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/jquery.easing.1.3.js"></script>
+<script language="javascript" src="js/i.js"></script>
 <script language="javascript" src="js/index.js"></script>
+
+<!--[if IE 6]>
+<script src="js/pngfix.js"></script>
+<script>
+  DD_belatedPNG.fix('.png');
+  document.execCommand("BackgroundImageCache", false, true);
+</script>
+<![endif]-->
 </head>
 
 <body>
 <div id="header_menu">
   <div id="header_menu_box">
-    <ul class="header_menu_list">
-      <li class="menu_list_1"><a class="menu_1" href="#"></a></li>
-      <li class="menu_list_2 hover">
+    <ul class="header_menu_list  nav_menu">
+      <li class="menu_list_1"><a class="menu_1" href="index.php"></a></li>
+      <li class="menu_list_2">
       	<a class="menu_2" href="#"></a>
-      	<ul class="menu_son">
-        	<li><a href="#">金冠食品</a></li>
-            <li><a href="#">闽中真田</a></li>
-            <li><a href="#">上海大众</a></li>
-            <li><a href="#">千金药业</a></li>
-            <li><a href="#">银鹭食品</a></li>
+        <ul class="menu_son menu_five png">
+        	<li class="menu_son_first"><a href="zy_jinguan.php">金冠食品</a></li>
+            <li class="mzzt"><a href="zy_mzzt.php">闽中真田</a></li>
+            <li class="dazhong"><a href="zy_dazhong.php">上海大众</a></li>
+            <li class="qianjin"><a href="zy_qianjin.php">千金药业</a></li>
+            <li class="yinlu"><a href="zy_yinlu.php">银鹭食品</a></li>
         </ul>
       </li>
-      <li  class="menu_list_3"><a class="menu_3" href="#"></a></li>
-      <li class="menu_list_4"><a class="menu_4" href="#"></a></li>
+      <li class="menu_list_3"><a class="menu_3" href="anli.php"></a></li>
+      <li class="menu_list_4"><a class="menu_4" href="jjfa.php"></a></li>
     </ul>
     <ul class="header_menu_logo">
       <li class="qq_mind"><a href="#"></a></li>
@@ -33,47 +44,162 @@
     </ul>
   </div>
 </div>
-<div id="top_pic">
-  <div class="homepage_intro">
-    <div class="homepage_intro_player"> <a href="javascript:;" style="display: block;"> <img src="images/top_1.jpg"></a> <a href="javascript:;" style="display: none;"> <img src="images/top_2.jpg"></a> <a href="javascript:;" style="display: none;"> <img src="images/top_3.jpg"></a> <a href="javascript:;" style="display: none;"> <img src="images/top_4.jpg"></a> <a href="javascript:;" style="display: none;"> <img src="images/top_5.jpg"></a> </div>
-    <div class="homepage_intro_player_control"> <a href="javascript:;" class="current"></a> <a href="javascript:;" class=""></a> <a href="javascript:;" class=""></a> <a href="javascript:;" class=""></a> <a href="javascript:;" class=""></a> </div>
+<style>
+	#header_menu_box ul.header_menu_list li.menu_list_1 a {
+	background-position: 0px 50px;
+	width: 130px;
+}
+</style>
+
+
+
+
+<div class="banner">
+      <div class="banner_container" id="index_banner">
+
+
+    
+
+     <div class="banner_content">
+
+      <div style="background-image:url(images/top_01.jpg); width:1000px; height:367px;"> <a class="banner_link" href="" style="position:absolute;left:397px;top:129px;display:block;" > <img src="images/topimg_01.png" class="png"  /></a> </div>
+
+    </div>
+
+    
+
+       <div class="banner_content">
+
+      <div style="background-image:url(images/top_02.jpg); width:1000px; height:367px;"> <a class="banner_link" href="" style=" position:absolute;left:427px;top:132px;display:block;"> <img src="images/topimg_02.png" class="png" /></a> </div>
+
+    </div>
+
+    
+
+    <div class="banner_content">
+
+      <div style="background-image:url(images/top_03.jpg); width:1000px; height:367px;"> <a class="banner_link" href="" style="position:absolute;left:102px;top:75px;display:block;"> <img src="images/topimg_03.png"  class="png" /></a> </div>
+
+    </div>
+
+    
+
+
+        <div class="banner_content">
+
+      <div style="background-image:url(images/top_04.jpg); width:1000px; height:367px;"> <a class="banner_link" href="" style="position:absolute;left:350px;top:75px;display:block;"> <img src="images/topimg_04.png"  class="png" /></a> </div>
+
+    </div>
+    
+    
+     <div class="banner_content">
+
+      <div style="background-image:url(images/top_05.jpg); width:1000px; height:367px;"> <a class="banner_link" href="" style="position:absolute;left:397px;top:117px;display:block;"> <img src="images/topimg_05.png"  class="png" /></a> </div>
+
+    </div>
+
+    
+    <ul class="banner_nav">
+
+      <li class="current"><a></a></li>
+
+      <li><a></a></li>
+
+      <li><a></a></li>      <li><a></a></li>
+	  <li><a></a></li>
+    </ul>
+
   </div>
-</div>
+    </div>
+    <script language="javascript">
+
+
+
+	$().ready(function(e) {
+
+
+		$f.create($f.slide,{parent:'.banner_container',target:'.banner_content',nav:'.banner_nav li',start:2,easing:'easeInOutExpo',duration:1000,time:10000,auto:true,dir:0,current:'current'});
+
+		var pos = {
+
+			0:88,1:642,2:82,3:650,4:650
+
+		},offset = 500,time=1300;
+
+		$('.banner_content').each(function(index, element) {
+
+			$(this).bind('slideInPos',function(){
+
+				$(this).find('.banner_link').stop().css({left:pos[index]-offset}).animate({left:pos[index]},time,'swing');
+
+			}).bind('slideInNeg',function(){
+
+				$(this).find('.banner_link').stop().css({left:pos[index]+offset}).animate({left:pos[index]},time,'swing');
+
+			}).bind('slideOutPos',function(){
+
+				$(this).find('.banner_link').stop().css({left:pos[index]}).animate({left:pos[index]+offset},time,'swing');
+
+			}).bind('slideOutNeg',function(){
+
+				$(this).find('.banner_link').stop().css({left:pos[index]}).animate({left:pos[index]-offset},time,'swing');
+
+			});
+
+		});
+
+		
+		
+
+	});
+
+
+</script> 
+  </div>
+
+
+
 <div class="content_tab">
   <div id="work_share">
     <div id="work_share_menu">
       <ul>
-        <li id="menu_title"><a href="#"></a></li>
-        <li id="menu_food"><a href="#"></a></li>
-        <li id="menu_medicine"><a href="#"></a></li>
-        <li id="menu_it"><a href="#"></a></li>
-        <li id="menu_daily"><a href="#"></a></li>
-        <li id="menu_traffic"><a href="#"></a></li>
+        <li id="menu_title"><a></a></li>
+        <li id="menu_food"><a href="anli_aoliao.php"><span class="menu_hover" id="hover_food"></span></a></li>
+        <li id="menu_medicine"><a href="anli_999.php"><span class="menu_hover" id="hover_medicine"></span></a></li>
+        <li id="menu_it"><a href="anli_intel.php"><span class="menu_hover" id="hover_it"></span></a></li>
+        <li id="menu_daily"><a href="anli_baojie.php"><span class="menu_hover" id="hover_daily"></span></a></li>
+        <li id="menu_traffic"><a href="anli_shdz.php"><span class="menu_hover" id="hover_traffic"></span></a></li>
       </ul>
     </div>
   </div>
-    <div  id="menu_tab">
+    <div id="menu_tab">
+    	<div id="tab_bg"><img class="png" src="images/foot_4.png" width="922" height="105" /></div>
         <ul>
             <li>
                 <p class="pt"><a><i>大平台</i></a></p>
-                <img class="iteam" src="images/big.png" width="865" height="510"/>
+                <img class="iteam" id="pt_iteam1" src="images/foot_1.png" width="868" height="518" />
+                <!--<a class="iteam_1 iteam" href="#"></a>-->
             </li>
             <li>
                 <p class="data"><a><i>大数据</i></a></p>
-                <img class="iteam" src="images/data.png" width="865" height="510" />
+                <img class="iteam" id="pt_iteam2" src="images/foot_2.png" width="868" height="518" />
+                <!--<a class="iteam_2 iteam" href=""></a>-->
             </li>
             <li>
-            	<p class="zy"><a><i>大资源</i></a></p>
-                <img class="iteam" src="images/zy.png" width="865" height="510" />
+                <p class="zy"><a><i>大资源</i></a></p>
+                <img class="iteam" id="pt_iteam3" src="images/foot_3.png" width="868" height="518" />
+                <!--<a class="iteam_3 iteam" href=""></a>-->
             </li>
         </ul>
+        
     </div>
 </div>
 <div class="footer">
   <div class="footer_up">
     <div id="foot_menu">
       <p class="left"><a href="#">腾讯智慧</a>&nbsp;|&nbsp;<a href="#">关于腾讯</a>&nbsp;|&nbsp;<a href="#">服务协议</a>&nbsp;|&nbsp;<a href="#">隐私权保护</a>&nbsp;|&nbsp;<a href="#">开放平台</a>&nbsp;|&nbsp;<a href="#">网站导航</a>&nbsp;|&nbsp;<a href="#">版权所有</a></p>
-      <p class="right"><a href="#" class="s_wb"></a><a href="#" class="q_qq"></a><a href="#" class="q_zone"></a><a href="#" class="q_wb"></a><a class="s_share">分享到：</a></p>
+      <p class="right"><a href="javascript:;" class="s_wb"></a>
+      	<a href="javascript:;" class="q_qq"></a><a href="javascript:;" class="q_zone"></a><a href="javascript:;" class="q_wb"></a><a class="s_share">分享到：</a></p>
       <p class="left"><a href="#">京ICP备11010962号</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">京公网安备110105003042</a></p>
       <div class="code_info">
         <div class="info">
@@ -87,5 +213,18 @@
     <div id="copyright">Copyright © 1998 - 2013 Tencent. All Rights Reserved</div>
   </div>
 </div>
+<script>
+$().ready(function(e) {
+	var img='';
+	var _link = '';
+	var title = "";//,content = '';
+	var content = '';
+	$(".q_wb").click(function(){window.open('http://share.v.t.qq.com/index.php?c=share&a=index&url='+encodeURIComponent(_link)+'&title='+encodeURIComponent(content)+'&pic='+encodeURIComponent(img)+'','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes')});
+	$(".q_qq").click(function(){window.open('http://share.v.t.qq.com/index.php?c=share&a=index&url='+encodeURIComponent(_link)+'&title='+encodeURIComponent(content)+'&pic='+encodeURIComponent(img)+'','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes')});
+	$(".q_zone").click(function(){window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+encodeURIComponent(_link)+'&title='+encodeURIComponent(title)+'&pics='+encodeURIComponent(img)+'&summary='+encodeURIComponent(content)+'','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes')});
+	$(".s_wb").click(function(){window.open('http://v.t.sina.com.cn/share/share.php?appkey=&url='+encodeURIComponent(_link)+'&pic='+encodeURIComponent(img)+'&title='+encodeURIComponent(content)+'','_blank','scrollbars=no,width=600,height=450,left=75,top=20,status=no,resizable=yes')});
+	}
+	)
+</script>
 </body>
 </html>
